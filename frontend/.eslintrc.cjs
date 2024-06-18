@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
+    'plugin:@stylistic/recommended-extends',
   ],
   
   ignorePatterns: ['commitlint.config.js','dist', '.eslintrc.cjs'],
@@ -18,7 +19,7 @@ module.exports = {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
-  plugins: ['react-refresh','sonarjs','unicorn','import',],
+  plugins: ['react-refresh','sonarjs','unicorn','import'],
   rules: {
     'react-refresh/only-export-components': [
       'error',
@@ -27,7 +28,6 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/no-explicit-any': 'error',
-
     'unicorn/no-for-loop': 'error',
     'unicorn/no-array-for-each': 'error',
     'unicorn/no-lonely-if': 'error',
