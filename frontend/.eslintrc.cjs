@@ -10,8 +10,8 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:@stylistic/recommended-extends',
   ],
-  
-  ignorePatterns: ['commitlint.config.js','dist', '.eslintrc.cjs'],
+
+  ignorePatterns: ['commitlint.config.cjs', 'dist','pnpm-lock.yaml','package.json','.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',

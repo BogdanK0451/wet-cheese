@@ -1,1 +1,3 @@
+cd frontend
+
 pnpm dlx commitlint --edit \
